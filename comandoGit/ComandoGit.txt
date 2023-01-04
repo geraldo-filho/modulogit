@@ -1,0 +1,47 @@
+-> Comandos do Git
+
+- git config --global user.name -> Adiciona o nome do usuário da máquina (Geraldo Filho)
+- git config --global user.email -> Adiciona o e-mail do usuário da máquina (geraldofilho1069@gmail.com)
+- git config user.name -> Verifica qual o nome do usuário
+- git config --list -> Lista todas as informações do git na máquina
+- git init -> Inicialização do repositório
+- git status -> Realiza uma varredura de todas as alterações realidas no diretório
+- git add + nome do arqui -> Adiciona o arquivo ao monitoramento do git
+- git add -A -> Adiciona todos os arqivos do diretório ao monitoramento do git
+- git commit -m "Comentário" -> Realiza o commit dos arquivos da pasta
+- git log -> Lista os commits que foram realizados
+- git branch -> Informa quan o branch do diretório que está sendo utilizado
+
+		 1 --soft: Volta as informações do commit que for informado, porém aquelas últimas alterações continuam porém ainda não
+			commitadas.
+- git reset	 2 --mixed: Volta as informações do commit que for informado, porém não deixa as últimas alterações preparadas, Necessitaria
+			do add para o último commit.
+		 3 --hard: Apaga todas as informações dos commits anteriores e deixa apenas o commit que for selecionado.
+
+- git branch + "nome do branch" -> Cria um novo Branch a ser utilizado
+- git checkout + "nome do branch" -> Altera entre as Branch criadas
+- git diff -> Detalha todas as alterações que foram realizados no seu arquivo, antes da realização do commit
+- git diff --name-only -> Informa o nome dos arquivos que foram alterados.
+- git diff --name + "nome do arquivo" -> Detalha apenas as alterações que foram feita naquele arquivo selecionado.
+- git remote add -> Realizar a ligação entre o reósitório remoto e o local.
+- git push -> Enviar os arquivos ao repositorio remoto.
+- git revert --no-edit -> Realiza a reverção do commit que você selecionar, porém salva aquele commit para que ele possa ser modificado.
+- git push origin : + "nome da branch" -> Exclue aquela branch do repositório remoto.
+- git branch -D -> Excleu a branch do repositório local.
+- git push origin : + "nome da branch" -> Puxa todas as informações que estiver no repositório remoto.
+- git clone + "url" -> Realiza um clone perfeito com todas as informações daquele projeto remoto, virando local e podendo ser alterado.
+- git remote -v -> Verifica o nome o arquivo que foi utilizado no repositório remoto.
+
+-> Alguns comandos do terminal
+
+- Para navegar utilizar a palavra "cd" para navegar entre as pastas, a unidade "C:" vai ser o diretório padrão do sistema, onde inicia os
+arquivos a serem navegados.
+- dir -> Lista os arquivos e o diretório 
+- tree /f -> Lista uma árvore com os arquivos
+- ../ -> Volta uma pasta
+
+-> Informações Adiconais
+
+- Branch: é basicamente o controle de versão do seu sistema, onde o primeiro commit é o MASTER,  o sucessores são as versões
+- Commit: é basicamente o trabalho que você realizou na versão que está tratando, seja uma atualização, remoção ou alteração de dados e 
+enviar elas para o git
